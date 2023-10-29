@@ -1,0 +1,63 @@
+body .imgEtInfoFilm {
+  display: flex;
+}
+body .imgEtInfoFilm #infoFilm {
+  display: flex;
+  flex-direction: column;
+}
+body .imgEtInfoFilm #infoFilm #titreFilm {
+  color: blue;
+}
+body .imgEtInfoFilm #infoFilm #dateGenreEtDuree {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+body .imgEtInfoFilm #infoFilm #dateGenreEtDuree #date {
+  color: blue;
+}
+body .imgEtInfoFilm #infoFilm #dateGenreEtDuree #genre {
+  color: blue;
+}
+body .imgEtInfoFilm #infoFilm #dateGenreEtDuree #duree {
+  color: blue;
+}
+body .imgEtInfoFilm #infoFilm #note {
+  color: blue;
+}
+body .imgEtInfoFilm #infoFilm #synopsis {
+  display: flex;
+  color: red;
+}
+body .imgEtInfoFilm #infoFilm .bandeAnnonceIcons {
+  display: flex;
+  flex-direction: row;
+}
+body .imgEtInfoFilm #infoFilm .bandeAnnonceIcons .icon {
+  border-radius: 3rem;
+  --c: #229091;
+  /* the color*/
+  box-shadow: 0 0 0 0.1em inset var(--c);
+  --_g: linear-gradient(var(--c) 0 0) no-repeat;
+  background: var(--_g) calc(var(--_p, 0%) - 100%) 0%, var(--_g) calc(200% - var(--_p, 0%)) 0%, var(--_g) calc(var(--_p, 0%) - 100%) 100%, var(--_g) calc(200% - var(--_p, 0%)) 100%;
+  background-size: 50.5% calc(var(--_p, 0%) / 2 + 0.5%);
+  outline-offset: 0.1em;
+  transition: background-size 0.4s, background-position 0s 0.4s;
+}
+body .imgEtInfoFilm #infoFilm .bandeAnnonceIcons icon:hover {
+  --_p: 100%;
+  transition: background-position 0.4s, background-size 0s;
+}
+body .imgEtInfoFilm #infoFilm .bandeAnnonceIcons icon:active {
+  box-shadow: 0 0 9000000000q inset rgba(0, 0, 0, 0.6);
+  background-color: var(--c);
+  color: #fff;
+}
+body .imgEtInfoFilm #infoFilm .bandeAnnonceIcons .icon {
+  font-family: "PT Serif", serif;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0.1em 0.6em;
+  font-weight: bold;
+  border: none;
+}/*# sourceMappingURL=movie.css.map */

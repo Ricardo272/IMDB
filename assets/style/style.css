@@ -33,14 +33,16 @@ body button {
 body .block {
   display: flex;
   flex-direction: row;
-  width: 100%;
   justify-content: space-around;
   overflow: scroll;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 body .block #affiche {
   display: flex;
   flex-direction: column;
-  width: 16rem;
+  width: -moz-fit-content;
+  width: fit-content;
   margin: 2rem;
   padding: 1rem;
 }
@@ -55,14 +57,16 @@ body .block #affiche #photoEtPlus {
 body .block #affiche #photoEtPlus img {
   border-radius: 2rem;
   cursor: pointer;
-  width: 256px;
-  height: 384px;
+  width: 20rem;
+  height: 28rem;
 }
 body .block #affiche #photoEtPlus #btnPlus {
+  font-size: 1.5rem;
   width: -moz-fit-content;
   width: fit-content;
-  margin: 1rem;
-  align-self: center;
+  position: absolute;
+  top: 10.5rem;
+  margin: 0rem 16rem;
 }
 body .block #affiche .invisible {
   display: none;

@@ -4,12 +4,12 @@ serif;
 
 
 body {
-    background: #ffffff;
+    background: #303036;
     font-family: $MyFont;
 
     button {
         border-radius: 3rem;
-        --c: #229091;
+        --c: #FC5130;
         /* the color*/
 
         box-shadow: 0 0 0 .1em inset var(--c);
@@ -40,11 +40,49 @@ body {
 
     button {
         font-family: $MyFont;
-        font-size: 3.5rem;
+        font-size: 2.5rem;
         cursor: pointer;
         padding: .1em .6em;
         font-weight: bold;
         border: none;
+        margin: 0 1rem;
+    }
+
+    .barreDeRecherche {
+        display: flex;
+        width: fit-content;
+
+
+        #rechercher {
+            font-family: "PT Serif", serif;
+            font-size: 2.5rem;
+            cursor: pointer;
+            padding: 0.1em 0.6em;
+            font-weight: bold;
+            border: none;
+            border-radius: 3rem;
+            --c: #FC5130;
+            box-shadow: 0 0 0 0.1em inset var(--c);
+            --_g: linear-gradient(var(--c) 0 0) no-repeat;
+            background: var(--_g) calc(var(--_p, 0%) - 100%) 0%, var(--_g) calc(200% - var(--_p, 0%)) 0%, var(--_g) calc(var(--_p, 0%) - 100%) 100%, var(--_g) calc(200% - var(--_p, 0%)) 100%;
+            background-size: 50.5% calc(var(--_p, 0%) / 2 + 0.5%);
+            outline-offset: 0.1em;
+            transition: background-size 0.4s, background-position 0s 0.4s;
+
+        }
+
+        #barreDeRecherche {
+            border-radius: 2rem;
+            font-family: "PT Serif", serif;
+            font-size: 2.5rem;
+            cursor: pointer;
+            padding: 0.1em 0.6em;
+            font-weight: bold;
+            border-radius: 3rem;
+            border: solid .3rem;
+            margin: 0 1rem;
+
+        }
     }
 
     .block {
@@ -60,10 +98,30 @@ body {
             width: fit-content;
             margin: 2rem;
             padding: 1rem;
+            background-color: #30BCED;
+            border-radius: 1rem;
+            padding: 1rem;
+
+
+            h1 {
+                background-color: #FFFAFF;
+                border-radius: 1rem;
+                padding: 1rem;
+            }
+
+            h2 {
+                background-color: #FFFAFF;
+                border-radius: 1rem;
+                padding: 1rem;
+            }
+
 
             #release_date {
                 font-weight: bold;
                 font-size: 1.5rem;
+                background-color: #FFFAFF;
+                border-radius: 1rem;
+                padding: 1rem;
             }
 
             #photoEtPlus {
@@ -75,6 +133,8 @@ body {
                     cursor: pointer;
                     width: 20rem;
                     height: 28rem;
+                    background-color: #FFFAFF;
+                    padding: 1rem;
                 }
 
                 #btnPlus {
